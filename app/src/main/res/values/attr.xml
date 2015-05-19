@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="gva_icon" format="reference" />
+    <attr name="gva_color" format="color" />
+    <attr name="gva_text" format="string" />
+    <attr name="gva_text_size" format="dimension" />
+
+    <declare-styleable name="ChangeColorIconView">
+        <attr name="gva_icon" />
+        <attr name="gva_color" />
+        <attr name="gva_text" />
+        <attr name="gva_text_size" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.Base" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:colorPrimaryDark">@color/blue_grey_900</item>
+        <item name="android:colorPrimary">@color/blue_grey_800</item>
+        <item name="android:navigationBarColor">@color/blue_grey_800</item>
+</style>
+
+</resources>

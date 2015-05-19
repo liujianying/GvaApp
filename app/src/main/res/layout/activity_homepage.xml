@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.app.FragmentTabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+
+        <!-- 底部tab条 -->
+        <RelativeLayout
+            android:id="@+id/layout_bottom_tab"
+            android:layout_width="fill_parent"
+            android:layout_height="53dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/title_color" />
+
+            <RadioGroup
+                android:id="@+id/main_radio"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="bottom"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_button0"
+                    style="@style/main_tab_bottom"
+                    android:checked="false"
+                    android:drawableTop="@drawable/tab_button_home"
+                    android:text="@string/Tab_main" />
+
+                <RadioButton
+                    android:id="@+id/radio_button1"
+                    style="@style/main_tab_bottom"
+                    android:drawableTop="@drawable/tab_button_shop"
+                    android:text="乐商" />
+
+
+                <RadioButton
+                    android:id="@+id/radio_button3"
+                    style="@style/main_tab_bottom"
+                    android:drawableTop="@drawable/tab_button_cardpack"
+                    android:text="@string/Tab_cardpack" />
+
+                <RadioButton
+                    android:id="@+id/radio_button4"
+                    style="@style/main_tab_bottom"
+                    android:drawableTop="@drawable/tab_button_more"
+                    android:text="@string/Tab_more" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/layout_bottom_tab" />
+
+    </RelativeLayout>
+
+</android.support.v4.app.FragmentTabHost>

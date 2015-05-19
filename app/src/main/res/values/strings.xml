@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">GvaApplication</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+<!-- table -->
+    <string name="Tab_main">首页</string>
+    <string name="Tab_leyou">乐友圈</string>
+    <string name="Tab_cardpack">卡包</string>
+    <string name="Tab_screening">特产</string>
+    <string name="Tab_shop">商城</string>
+    <string name="Tab_more">我的</string>
+
+
+    <string name="tab_weixin">one</string>
+    <string name="tab_contact">two</string>
+    <string name="tab_find">three</string>
+    <string name="tab_me">four</string>
+
+
+    <string name="tab_one">选项一</string>
+    <string name="tab_two">选项二</string>
+
+</resources>
