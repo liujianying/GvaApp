@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="4dip"
+    android:paddingBottom="4dip"
+    android:gravity="center_horizontal|center_vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:id="@+id/ll_search_bg"
+            android:background="@mipmap/login_edit_normal" >
+
+            <ImageView
+                android:id="@+id/seach_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/search_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/search_input_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true" >
+
+            <EditText
+                android:id="@+id/search_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/btn_clear_input"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:drawableLeft="@mipmap/search_icon"
+                android:ellipsize="end"
+                android:focusable="true"
+                android:hint="搜索"
+                android:textColorHint="#B0B7B7"
+                android:maxLength="20"
+                android:paddingLeft="8dip"
+                android:popupBackground="@color/white"
+                android:singleLine="true"
+                android:textColor="#5e5043"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/btn_clear_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:adjustViewBounds="true"
+                android:background="@drawable/btn_clear_input" />
+        </RelativeLayout>
+        <ImageView android:layout_width="match_parent" android:layout_height="0.5dip"
+                   android:background="@mipmap/dialog_line"
+                   android:layout_below="@id/search_input_layout"
+                   android:id="@+id/iv_line"
+               />
+    </RelativeLayout>
+
+</RelativeLayout>

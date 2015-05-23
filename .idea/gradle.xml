@@ -10,8 +10,12 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/baseui" />
             <option value="$PROJECT_DIR$/javatest" />
+            <option value="$PROJECT_DIR$/loadview" />
             <option value="$PROJECT_DIR$/localtion" />
+            <option value="$PROJECT_DIR$/myautoview" />
+            <option value="$PROJECT_DIR$/pulltorefreshs" />
             <option value="$PROJECT_DIR$/swipeBacklibrary" />
             <option value="$PROJECT_DIR$/util" />
             <option value="$PROJECT_DIR$/widgetlibrary" />

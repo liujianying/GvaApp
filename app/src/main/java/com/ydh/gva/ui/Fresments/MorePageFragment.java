@@ -1,6 +1,6 @@
 package com.ydh.gva.ui.Fresments;
 
-import com.ydh.gva.ui.Base.BaseFragment;
+import com.ydh.gva.base.BaseFragment;
 
 /**
  * Created by liujianying on 15/5/12.

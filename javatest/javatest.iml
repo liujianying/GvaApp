@@ -27,6 +27,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="fastjson-1.2.5" level="project" />
     <orderEntry type="library" exported="" name="javatest.javatest" level="project" />
   </component>
 </module>

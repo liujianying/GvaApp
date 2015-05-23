@@ -43,22 +43,17 @@ repositories {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     //    compile(name: 'widgetlibrary-release', ext: 'aar')
-    compile 'com.facebook.fresco:fresco:0.4.0'
     //    compile 'com.facebook.fresco:imagepipeline-okhttp:0.4.0'
-    compile 'com.alibaba:fastjson:1.2.5'
-    compile project(':swipeBacklibrary')
-    compile 'com.squareup.okio:okio:1.3.0'
-    compile 'com.android.support:appcompat-v7:22.1.1'
     //    compile 'org.litepal.android:core:1.2.0'
-    compile 'de.greenrobot:eventbus:2.4.0'
     //    xUtils
     //    compile 'de.greenrobot:java-common:2.0.0'
     //    https://github.com/jaychou2012/SmartAndroidSource/blob/master/SmartAndroid/src/com/smartandroid/sa/view/AutoLoading.java
     //    LiteOrm库
     //    compile 'de.greenrobot:greendao:1.3.7'
-    compile 'com.squareup.okhttp:okhttp:2.3.0'
-    compile 'com.squareup.okio:okio:1.3.0'
     //    compile 'im.amomo.volley:okvolley:1.1.3'
-    compile 'com.google.code.gson:gson:2.3.1'
+    //    https://github.com/yangfuhai/ASimpleCache
     compile project(':util')
+    compile project(':localtion')
+    compile project(':baseui')
+    compile project(':myautoview')
 }

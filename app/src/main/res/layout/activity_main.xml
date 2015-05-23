@@ -37,6 +37,24 @@
             zhy:gva_icon="@drawable/ic_menu_friendslist"
             zhy:gva_text="@string/tab_two"
             zhy:gva_text_size="12sp" />
+        <com.ydh.gva.widget.ChangeColorIconWithTextView
+            android:id="@+id/id_indicator_three"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            zhy:gva_icon="@drawable/ic_menu_friendslist"
+            zhy:gva_text="@string/tab_three"
+            zhy:gva_text_size="12sp" />
+        <com.ydh.gva.widget.ChangeColorIconWithTextView
+            android:id="@+id/id_indicator_four"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            zhy:gva_icon="@drawable/ic_menu_friendslist"
+            zhy:gva_text="@string/tab_foru"
+            zhy:gva_text_size="12sp" />
     </LinearLayout>
 
 </LinearLayout>

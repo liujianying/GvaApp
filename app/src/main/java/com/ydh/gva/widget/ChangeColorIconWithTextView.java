@@ -19,6 +19,7 @@ import android.util.TypedValue;
 import android.view.View;
 
 import com.ydh.gva.R;
+import com.ydh.gva.ui.Base.GvaApp;
 
 public class ChangeColorIconWithTextView extends View {
 
@@ -28,7 +29,7 @@ public class ChangeColorIconWithTextView extends View {
 	/**
 	 * 颜色
 	 */
-	private int mColor = 0xFF45C01A;
+	private int mColor = GvaApp.wlApp.getResources().getColor(R.color.blue_grey_800);
 	/**
 	 * 透明度 0.0-1.0
 	 */

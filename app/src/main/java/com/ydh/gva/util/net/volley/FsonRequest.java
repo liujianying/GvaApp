@@ -1,7 +1,6 @@
 package com.ydh.gva.util.net.volley;
 
 import com.alibaba.fastjson.JSON;
-import com.google.gson.Gson;
 import com.ydh.gva.core.YDHData;
 import com.ydh.gva.util.net.volley.toolbox.HttpHeaderParser;
 
@@ -22,7 +21,6 @@ public class FsonRequest<S, T> extends Request<T> {
     private final Type responseDataType;
     private final Response.Listener<T> mListener;
     private final Map<String, String> mHeaders;
-    private Gson mGson;
     private S mPayload;
     private String mURL;
 
@@ -114,28 +112,10 @@ public class FsonRequest<S, T> extends Request<T> {
                     + json);
 
             YDHData ydhData = JSON.parseObject(json, responseDataType);
-            ydhData.GsonEnncryptToString();// 数据还原
+            ydhData.fsonEnncryptToString();// 数据还原
             return  Response.success(
                     (T) JSON.parseObject(json, responseDataType),
                     HttpHeaderParser.parseCacheHeaders(response));
-
-//            do {
-//                if (isSendRequest) {
-//
-//                    int resultCode = ydhData.getResultCode();
-//
-//                    if (resultCode == 0) {
-//                        return Response.success(
-//                                (T) JSON.parseObject(json, responseDataType),
-//                                HttpHeaderParser.parseCacheHeaders(response));
-//                        isAgainRequest = false;
-//                    }else {
-//                        managerResultCode(resultCode, ydhData);
-//                    }
-//                }
-//
-//            } while (isAgainRequest);
-
 
         } catch (Exception e) {
             return Response.error(new ParseError(e));
@@ -143,74 +123,6 @@ public class FsonRequest<S, T> extends Request<T> {
     }
 
 
-//    private void managerResultCode(final int resultCode, final Object object) throws Exception {
-//
-//        switch (resultCode) {
-//
-//            case ErrorCode.INVALID_SESSION:// Session无效或者过期
-//            case ErrorCode.SESSION_NO_EXIST:// Session不存在
-//            case ErrorCode.KEY_ERROR:// 获取认证KEY失败
-//            case ErrorCode.CRYPT_ERROR:// 获取认证KEY失败
-//
-//
-//                isSendRequest = false;
-//                isAgainRequest = true;
-//                if(isConnectFlag <= CONNECT_COUNT) {
-//                    LoginInfo logiInfo = SharedPreUtil.Instance().getLoginInfo();
-//
-//                    if(TextUtils.isEmpty(logiInfo.getUserName())) {
-//                        callback.errorMessage(resultCode,responseContent);
-//                        isAgainRequest = false;
-//                        return;
-//                    }
-//                    try {
-//                        String str = OkHttpUtil.post(HttpRequestUrl.Instance().getManagerLogin(logiInfo.getUserName(), logiInfo.getPassword()),
-//                                HttpRequestBody.Instance().requestManagerLoginBody(logiInfo.getUserName(), logiInfo.getPassword()));
-//
-//                        AppLog.I("str  === " + str);
-//                        YDHData ydhData = JSON.parseObject(str, YDHData.class);
-//                        ydhData.GsonEnncryptToString();// 数据还原
-//                        int resultCode_r = ydhData.getResultCode();
-//                        if (0 == resultCode_r && callback != null) {
-//                            logiInfo = JSON.parseObject(ydhData.getData(), LoginInfo.class);
-//                            final JSONObject body_json = new JSONObject(body);
-//                            String data = null;
-//                            isConnectFlag++;
-//                            isSendRequest = true;
-//                            if (body_json.getInt("encryptType") == 1 && !body_json.isNull("data")) {
-//                                String data_Aes = body_json.getString("data");
-//                                data = AESCrypto.decrypt(SystemVal.getLoginInfo().getKey(), data_Aes);
-//                            }
-//                            body_json.put("session", logiInfo.getSession());
-//                            if (body_json.getInt("encryptType") == 1 && !body_json.isNull("data")) {
-//                                body_json.put("data", AESCrypto.encrypt(logiInfo.getKey(), data));
-//                            }
-//                            body = body_json.toString();
-//                            /*    更新用户key   ****/
-//                            SystemVal.setLoginInfo(null);
-//
-//                        } else if (0 != resultCode && callback != null) {
-//                            callback.fetchSuccess(object);
-//                            isAgainRequest = false;
-//                        }
-//                    } catch (Exception e){
-//                        e.printStackTrace();
-//                        callback.errorMessage(resultCode,responseContent);
-//                        isAgainRequest = false;
-//                    }
-//                } else {
-//                    isAgainRequest = false;
-//                }
-//
-//                break;
-//
-//            default:
-//                isAgainRequest = false;
-//                callback.fetchSuccess(object);
-//                break;
-//        }
-//
-//    }
 
 
 }

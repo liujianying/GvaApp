@@ -1,5 +1,7 @@
 package com.javatest;
 
+import com.alibaba.fastjson.JSONObject;
+
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class JavaTest {
@@ -19,6 +21,11 @@ public class JavaTest {
 //        //生成
 //        new  DaoGenerator()
 //                .generateAll(schema, "/Users/liujianying/GvaApp/javatest/src/main/java/com/ydh/gva/core");
+        String region_cd_string = ((int)(134567/100))*100 + "";
+        JSONObject json = new JSONObject();
+        json.put("A", "a");
+
+        System.out.println(region_cd_string);
 
     }
 

@@ -1,14 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title_color" >
+
+        <TextView
+            android:id="@+id/city_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="集团乐商"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/btn_searchLeShop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/icon_title_two_dimensional_code"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:padding="12dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_city"
+            android:layout_width="80.0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/city_bg" >
+
+            <TextView
+                android:id="@+id/city_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:drawablePadding="5.0dp"
+                android:drawableRight="@mipmap/icon_select_tip"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:lines="1"
+                android:paddingTop="1dp"
+                android:text="全国"
+                android:textColor="@color/white"
+                android:textSize="16.0sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <com.ydh.gva.autoview.MyAutoView
+        android:layout_below="@+id/rl_title"
+        android:id="@+id/homePage_autoView"
+        android:layout_width="fill_parent"
+        android:layout_height="147.3dip"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Button"
-        android:id="@+id/button3"
-        android:layout_gravity="center_horizontal"
+        android:id="@+id/button2"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
+
+
 </RelativeLayout>

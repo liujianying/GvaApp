@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/HoloThemeActivityAnimation</item>
+    </style>
+
+    <style name="AppBaseThemeTest" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="AppTheme.Base" parent="AppTheme"/>
+
+    <style name="BlankTheme" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+    <style name="HoloThemeActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_close_exit</item>
+    </style>
+
+
+    <!-- 标题栏字体设置 -->
+    <style name="title_text">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+
+    <!-- 界面统一返回按钮样式 -->
+    <style name="back_button">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">45dip</item>
+        <item name="android:layout_height">50dip</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/btn_back</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="common_white_btn_text_style">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/btn_text_style</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+</resources>

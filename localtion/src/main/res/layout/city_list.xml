@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.ydh.gva.location.widget.SearchBarWidgetStyle2
+                android:id="@+id/search_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:layout_marginRight="24.0dip"
+                android:drawablePadding="5.0dip"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="32.0dip"
+                android:background="@color/city_group_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="8.0dip"
+                android:text="@string/city_get_location"
+                android:textColor="@color/title_color" />
+
+            <LinearLayout
+                android:id="@+id/area_loc_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/core_white_pink_selector"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="48.0dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8.0dip"
+                    android:text="@string/city_curent_location"
+                    android:textColor="@drawable/black_white_text_color_selector"
+                    android:textSize="16.0sp" />
+
+                <LinearLayout
+                    android:id="@+id/located_progess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48.0dip"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:indeterminateDrawable="@drawable/rotate_progress_drawable" />
+
+                    <TextView
+                        style="@style/city_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:text="正在定位城市"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/city_loc_txt"
+                    style="@style/city_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <com.ydh.gva.location.widget.PinnedSectionListView
+                    android:id="@+id/pinned_list"
+                    style="@style/dividedListStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="#00000000"
+                    android:childDivider="@color/setting_line_color"
+                    android:fadingEdge="none"
+                    android:footerDividersEnabled="false"
+                    android:groupIndicator="@null"
+                    android:headerDividersEnabled="true"
+                    android:listSelector="#00000000" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.ydh.gva.location.widget.SideBarCityView
+            android:id="@+id/sidrbar"
+            android:layout_width="26.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="10.0dip" />
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="54.0dip"
+            android:layout_height="54.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="83.0dip"
+            android:background="@drawable/sidebar_background"
+            android:gravity="center"
+            android:padding="5.0dip"
+            android:textColor="#ffffffff"
+            android:textSize="30.0sp"
+            android:visibility="gone" />
+
+        <gva.ydh.com.loadview.LoadView
+            android:id="@+id/loadDataView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

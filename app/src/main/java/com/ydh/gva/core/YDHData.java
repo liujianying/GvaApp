@@ -87,7 +87,7 @@ public class YDHData {
 		this.data = data;
 	}
 
-	public String GsonEnncryptToString() {
+	public String fsonEnncryptToString() {
 
 		if (data == null){
 			return data="{}";

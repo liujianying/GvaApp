@@ -1,1 +1,1 @@
-include ':app', ':widgetlibrary', ':swipeBacklibrary', ':javatest', ':localtion', ':util'
+include ':app', ':widgetlibrary', ':swipeBacklibrary', ':javatest', ':localtion', ':util', ':loadview', ':baseui', ':myautoview', ':pulltorefreshs'

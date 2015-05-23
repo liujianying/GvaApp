@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.ydh.gva.R;
-import com.ydh.gva.ui.Base.BaseFragment;
+import com.ydh.gva.base.BaseFragment;
 
 import java.lang.reflect.Field;
 

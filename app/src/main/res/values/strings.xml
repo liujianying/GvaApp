@@ -19,7 +19,9 @@
     <string name="tab_me">four</string>
 
 
-    <string name="tab_one">选项一</string>
-    <string name="tab_two">选项二</string>
+    <string name="tab_one">首页</string>
+    <string name="tab_two">商城</string>
+    <string name="tab_three">钱包</string>
+    <string name="tab_foru">个人中心</string>
 
 </resources>

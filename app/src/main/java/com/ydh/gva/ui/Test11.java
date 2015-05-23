@@ -4,12 +4,12 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import com.ydh.gva.R;
-import com.ydh.gva.ui.Base.SwipeActivity;
+import com.ydh.gva.base.BaseActivity;
 
 /**
  * Created by liujianying on 15/5/9.
  */
-public class Test11 extends SwipeActivity {
+public class Test11 extends BaseActivity {
 
     private Button button;
 

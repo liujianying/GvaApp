@@ -1,6 +1,5 @@
 package com.ydh.gva.ui.activitys;
 
-import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,10 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.ydh.gva.R;
-import com.ydh.gva.ui.Base.BaseFragment;
+import com.ydh.gva.base.BaseFragment;
 import com.ydh.gva.ui.Test11;
-
-import java.lang.reflect.Field;
 
 /**
  * <dl>

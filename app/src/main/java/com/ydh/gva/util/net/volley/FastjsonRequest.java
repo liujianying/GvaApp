@@ -1,6 +1,7 @@
 package com.ydh.gva.util.net.volley;
 
 import com.alibaba.fastjson.JSON;
+import com.ydh.gva.core.YDHData;
 import com.ydh.gva.util.net.volley.toolbox.HttpHeaderParser;
 
 import java.util.HashMap;
@@ -77,9 +78,12 @@ public class FastjsonRequest<T> extends Request<T> {
         try {
             String json = new String(
                     response.data, HttpHeaderParser.parseCharset(response.headers));
+
+
             AppLog.E("Response", json);
-            return Response.success(
-                    JSON.parseObject(json, clazz), HttpHeaderParser.parseCacheHeaders(response));
+            YDHData ydhData = (YDHData)JSON.parseObject(json, clazz);
+            ydhData.fsonEnncryptToString();
+            return Response.success((T)ydhData, HttpHeaderParser.parseCacheHeaders(response));
         }catch (Exception e) {
             return Response.error(new ParseError(e));
         }

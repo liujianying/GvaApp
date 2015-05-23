@@ -46,5 +46,11 @@
     <string name="yes">是</string>
      <string name="no">否</string>
      <string name="geofence_des">点击地图，以点击点为中心建立地理围栏，再次点击地图修改地理围栏位置</string>
-    
+
+
+    <!-- 城市列表 -->
+    <string name="city_hot">热门城市</string>
+    <string name="search_hint">城市中文名称或拼音</string>
+    <string name="city_get_location">定位城市</string>
+    <string name="city_curent_location">我在：</string>
 </resources>

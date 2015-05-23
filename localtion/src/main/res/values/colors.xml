@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="grey"> #ebebeb</color>
-    <color name="black"> #000000</color>
-    <color name="darkgrey"> #C0C0C0</color>
-    <color name="white"> #FFFFFF</color>
-     <color name="red"> #FF0000</color>
+    <color name="gray">#ff666666</color>
+    <color name="grey">#ebebeb</color>
+    <color name="black">#000000</color>
+    <color name="darkgrey">#C0C0C0</color>
+     <color name="red">#FF0000</color>
      <color name="darkyellow"> #FFCC33</color>
-     
 
+    <color name="setting_bg_p">#fff5f5f5</color>
+    <color name="city_group_bg">#fff6f6f4</color>
+    <color name="line_color">#DCDCDC</color>
+    <color name="text_font_black">#ff444444</color>
+    <color name="setting_line_color">#ffcccccc</color>
+
+    <color name="setting_group_bg">#ffe4e4e4</color>
+    <color name="text_home_leshop_content">#5F5F5F</color>
+    <color name="special_line_color">#FFCCCCCC</color>
+    <color name="backgroud_color">#FFEEEEEE</color>
+    <color name="home_menu_bg">#DEDEDE</color>
 </resources>

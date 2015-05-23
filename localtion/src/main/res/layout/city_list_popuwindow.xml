@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="15dp"
+    android:background="@color/backgroud_color">
+
+    <GridView
+        android:id="@+id/city_hot_grid"
+        android:layout_alignParentTop="true"
+        android:layout_width="fill_parent"
+        android:layout_height="180.0dp"
+        android:gravity="center"
+        android:listSelector="@null"
+        android:overScrollMode="never"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:numColumns="3"
+        android:paddingLeft="8.0dp"
+        android:paddingRight="8.0dp" />
+
+    <View
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/view_line"
+        android:layout_below="@+id/city_hot_grid"
+        style="@style/special_line_Style" />
+
+    <RelativeLayout
+        android:id="@+id/city_list_rl"
+        android:layout_below="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:background="@drawable/message_content_selector"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:id="@+id/city_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="@drawable/black_white_text_color_selector"
+            android:text="当前城市：北京" />
+
+        <TextView
+            android:layout_toLeftOf="@+id/back_ioc"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:text="更换"
+            android:textColor="@drawable/btn_text_style3" />
+
+        <ImageView
+            android:id="@+id/back_ioc"
+            android:layout_marginLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/direction_right" />
+    </RelativeLayout>
+</RelativeLayout>

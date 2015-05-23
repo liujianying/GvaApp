@@ -4,9 +4,9 @@ import android.os.Bundle;
 
 import com.alibaba.fastjson.JSON;
 import com.ydh.gva.R;
+import com.ydh.gva.base.BaseActivity;
 import com.ydh.gva.core.Test;
 import com.ydh.gva.core.TestAction;
-import com.ydh.gva.ui.Base.BaseActivity;
 
 import de.greenrobot.event.EventBus;
 import gva.ydh.com.util.AppLog;

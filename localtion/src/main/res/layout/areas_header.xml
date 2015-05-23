@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/areas_header_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="32.0dip"
+            android:background="@color/city_group_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="8.0dip"
+            android:text="@string/city_hot"
+            android:textColor="@color/title_color" />
+
+        <GridView
+            android:id="@+id/city_hot_grid"
+            android:layout_width="fill_parent"
+            android:layout_height="172.0dip"
+            android:layout_marginRight="20.0dip"
+            android:gravity="center"
+            android:listSelector="@null"
+            android:numColumns="3"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="8.0dip" />
+    </LinearLayout>
+
+</LinearLayout>

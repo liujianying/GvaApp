@@ -4,8 +4,12 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GvaApp.iml" filepath="$PROJECT_DIR$/GvaApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baseui/baseui.iml" filepath="$PROJECT_DIR$/baseui/baseui.iml" />
       <module fileurl="file://$PROJECT_DIR$/javatest/javatest.iml" filepath="$PROJECT_DIR$/javatest/javatest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/loadview/loadview.iml" filepath="$PROJECT_DIR$/loadview/loadview.iml" />
       <module fileurl="file://$PROJECT_DIR$/localtion/localtion.iml" filepath="$PROJECT_DIR$/localtion/localtion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myautoview/myautoview.iml" filepath="$PROJECT_DIR$/myautoview/myautoview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pulltorefreshs/pulltorefreshs.iml" filepath="$PROJECT_DIR$/pulltorefreshs/pulltorefreshs.iml" />
       <module fileurl="file://$PROJECT_DIR$/swipeBacklibrary/swipeBacklibrary.iml" filepath="$PROJECT_DIR$/swipeBacklibrary/swipeBacklibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/util/util.iml" filepath="$PROJECT_DIR$/util/util.iml" />
       <module fileurl="file://$PROJECT_DIR$/widgetlibrary/widgetlibrary.iml" filepath="$PROJECT_DIR$/widgetlibrary/widgetlibrary.iml" />
